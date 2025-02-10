@@ -1,0 +1,36 @@
+body {
+    background-color: #333;
+}
+
+.row {
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .column {
+        max-width: 50%;
+        flex: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.image-item{
+        max-width: 100%;
+        flex: 100%;
+    }
+}
